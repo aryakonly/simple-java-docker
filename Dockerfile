@@ -2,8 +2,8 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY src/Time.java /app/Time.java
+COPY src/Main.java /app/Main.java
 
-RUN javac Time.java
+RUN javac Main.java
 
-CMD ["java", "Time"]
+CMD ["java", "Main"]
